@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Enhanced Form</title>
+</head>
+
+<body>
+          <h1>Enhanced & Accessible Form</h1>
+          <form action="/submit" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" autocomplete="name" placeholder="Enter First Name first"
+                              aria-label="Enter your Name" required>
+                    <br><br>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" aria-labelledby=""
+                              required>
+                    <br><br>
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" min="18" max="35" required>
+                    <br><br>
+                    <label for="country">Choose your Country</label>
+                    <select id="country" name="select">
+                              <option value="1">Nigeria</option>
+                              <option value="2">Ghana</option>
+                              <option value="3">Kenya</option>
+                              <option value="4">South Africa</option>
+                    </select>
+                    <br><br>
+                    <fieldset>
+                              <legend>Select your Gender:</legend>
+                              <input id="male" type="radio" name="gender" value="male">
+                              <label for="male">Male</label><br>
+                              <input id="female" type="radio" name="gender" value="female">
+                              <label for="female">Female</label>
+                    </fieldset>
+                    <br><br>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <br><br>
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <br><br>
+                    <input type="submit" value="Submit">
+</body>
+
+</html>
